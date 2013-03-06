@@ -1,0 +1,49 @@
+
+
+
+- View
+	- JSP
+	- HTML
+	
+- controller
+	- ViewArticles
+	- PostArticle
+	- DeleteArticle
+	
+- model
+	- DAO (http://www.oracle.com/technetwork/java/dataaccessobject-138824.html)
+	- SQL Connection (DatabaseConnection)
+	- Article
+	
+
+	CREATE TABLE demoblog_articles (
+		ID INT NOT NULL AUTO_INCREMENT,
+		Title VARCHAR(100) NOT NULL,
+		Content VARCHAR(4000),
+		Postdate DATE NOT NULL,
+		Author_id INT NOT NULL,
+		PRIMARY KEY (ID),
+		FOREIGN KEY (Author_id) REFERENCES demoblog_users(UID) ON UPDATE CASCADE ON DELETE CASCADE
+	)ENGINE=InnoDB;
+	
+	
+	CREATE TABLE demoblog_users (
+		UID INT NOT NULL AUTO_INCREMENT,
+		Nickname VARCHAR(30) NOT NULL,
+		Password VARCHAR(128) NOT NULL,
+		Email VARCHAR(40) NOT NULL,
+		Joindate DATE NOT NULL,
+		PRIMARY KEY (UID)
+	)ENGINE=InnoDB;
+	
+	
+	INSERT INTO demoblog_users ( Nickname, Password, Email, Joindate ) VALUES ('DemoUser', 'password', 'Demo@gmail.com', CURDATE() );
+	
+	INSERT INTO demoblog_articles ( Title, Content, Postdate, Author_id ) VALUES ('DemoPostaus', 'Blogiin tehty testi postaus.', CURDATE(), 1 );
+	INSERT INTO demoblog_articles ( Title, Content, Postdate, Author_id ) VALUES ('Toinen postaus blogiin', 'Lis‰‰ blogin testausta', CURDATE(), 1 );
+	INSERT INTO demoblog_articles ( Title, Content, Postdate, Author_id ) VALUES ('Kolmas', 'Testailua..', CURDATE(), 1 );
+	
+	
+	
+	
+	

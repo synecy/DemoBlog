@@ -1,0 +1,113 @@
+/*
+	Demo Blog CSS - 2013
+*/
+
+
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #E6F1F7;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+	margin-top:25px;
+}
+
+
+h1 {
+	font-size:22px;
+	color: #D2EAF5;
+	text-shadow: 0 1px 0 #000000;
+	z-index: 1;
+	margin-left:25px;
+}
+
+
+#topBlock {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100;
+	background-color: #10253A;
+	overflow: hidden;
+	z-index: 1;
+	opacity:0.9;
+}
+
+
+div.blogMessage {
+	left:50%;
+    background-color: #3D4F60;
+    box-shadow: 0px 8px 12px #888888;
+    text-align:center;
+    width:780px;
+    margin-left:25px;
+	margin-right:25px;
+    border-radius:5px;
+    padding:20px;
+	text-shadow: 1px 1px 0px #000;
+	font-size:16px;
+	color: white;
+	text-align:left;
+	font-family: Verdana, Sans-serif;
+}
+
+
+div.blogMessageDetails {
+	background-color: #435565;
+	box-shadow: 0px 1px 2px #10253A;
+	font-size:10px;
+	padding: 5px;
+}
+
+
+.msgDeleteBtn {
+	text-align: right;
+}
+
+
+.messageTitle {
+	font-size:16px;
+}
+
+
+#blogWrite {
+	background-color: #435565;
+	box-shadow: 0px 8px 12px #888888;
+	padding:20px;
+	border-radius:5px;
+	width:512px;
+	color: white;
+	text-align:left;
+	font-family: Verdana, Sans-serif;
+	text-shadow: 1px 1px 0px #000;
+	margin-bottom:100px;
+}
+
+
+#bottomBlock {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100;
+	background-image:url('images/varjo.png');
+	background-repeat:repeat-x;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+a:link {color:#93A1A1;}
+a:visited {color:#DEE4E4;}
+a:hover {color:#728282;}
+a:active {color:#BBC5C5;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+
