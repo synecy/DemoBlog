@@ -7,7 +7,7 @@ Sovellus on toteutettu käyttäen MySQL tietokantaa blogi viestien tallentamisee
 
 
 
-Blogi sivun ulkoasu
+Blogisivun ulkoasu
 --------------------------
 
 ![My image](http://i.imgur.com/Qyqibk6.png)
